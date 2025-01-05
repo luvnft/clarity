@@ -1,19 +1,21 @@
 [project]
-name = "token-groove"
+name = 'token-groove'
+description = ''
 authors = []
-description = ""
 telemetry = false
+cache_dir = '.cache'
 requirements = []
+[contracts.musik]
+path = 'contracts/musik.clar'
+clarity_version = 3
+epoch = 3.1
+
 [contracts.token_groove]
-path = "contracts/token_groove.clar"
-depends_on = []
-
-[repl]
-costs_version = 2
-parser_version = 2
-
+path = 'contracts/token_groove.clar'
+clarity_version = 1
+epoch = 2.05
 [repl.analysis]
-passes = ["check_checker"]
+passes = ['check_checker']
 
 [repl.analysis.check_checker]
 strict = false
